@@ -36,8 +36,11 @@ function App() {
   }
 
   return (
-    <div className='flex items-center justify-center h-screen'>
-      <div className='lg:p-10 text-center'>
+    <div className='flex lovebg items-center justify-center h-screen'>
+      <div className='lg:h-[300px] h-[220px] bg-black relative opacity-70 lg:w-8/12 w-11/12'>
+
+      </div>
+      <div className='lg:p-10 py-10 lg:h-[300px] h-[220px] absolute lg:w-8/12 w-11/12 text-center'>
         <h2 className='lg:text-2xl text-lg text-white'>The trial time will finish,</h2>
         <h2 className='lg:text-4xl text-xl flex items-center justify-around font-bold text-white'>
           <span className='inline-block lg:p-5 p-2'>
