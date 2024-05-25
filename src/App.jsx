@@ -3,7 +3,8 @@ import './App.css'
 
 function App() {
   // Target date: May 19, 2025, 12:00 AM
-  const targetDate = new Date('May 19, 2025 00:00:00').getTime();
+  // const targetDate = new Date('May 19, 2025 00:00:00').getTime();
+  const targetDate = new Date('May 24, 2024 00:00:00').getTime();
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -41,7 +42,8 @@ function App() {
 
       </div>
       <div className='lg:p-10 py-10 lg:h-[300px] h-[220px] absolute lg:w-8/12 w-11/12 text-center'>
-        <h2 className='lg:text-2xl text-lg text-white'>The trial time will finish,</h2>
+        <h2 className='lg:text-2xl text-lg text-white'>The trial time has finished,</h2>
+        {/* <h2 className='lg:text-2xl text-lg text-white'>The trial time will finish,</h2> */}
         <h2 className='lg:text-4xl text-xl flex items-center justify-around font-bold text-white'>
           <span className='inline-block lg:p-5 p-2'>
           {timeLeft.days}
@@ -60,7 +62,8 @@ function App() {
           <h1 className='lg:text-xl text-xs'>seconds</h1>
           </span>
         </h2>
-        <h2 className='lg:text-2xl text-lg text-white'>later</h2>
+        <h2 className='lg:text-2xl text-lg text-white'>Failed!</h2>
+        <h2 className='lg:text-2xl text-lg text-white'>The clock has stooped May 24, 2024.</h2>
       </div>
     </div>
   );
